@@ -13,10 +13,11 @@ intentos = 0
 for i, _ in enumerate(password):
     for letra in ascii_lowercase:
         intentos += 1
-        print(f"La contraseña fue forzada en {intentos} intentos: {intento + letra}")
         if letra == password[i]:
             intento += letra
             break
+print(f"La contraseña fue forzada en {intentos} intentos")
+
 
 # NOTA: A modo explicativo se mostrará la contraseña a buscar pero la idea es que ésta se ingrese de manera oculta.
-# Por ese motivo es que al momento de ingresar esta oculpa, pero en lo demás visible.
+# Por ese motivo es que al momento de ingresar esta oculta, pero en lo demás visible.
